@@ -90,7 +90,7 @@ for (int i = 1; i<10; i++;)
 ```
 | thread 1 | thread 2 | thread 3 |
 | :------- | :------: | -------: |
-| td       |    td    |       td |
+|   td     |    td    |     td   |
 | left     |  middle  |    right |
 
 ```
