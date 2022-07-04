@@ -367,82 +367,94 @@ code {
   </script>
 <h1 id="python-cheat-sheet">Python Cheat Sheet</h1>
 <h2 id="dictionary">Dictionary</h2>
-<p>Example <code>MyDict = {1:True,2:False,3:None} Key = (1,2,3) value = 0</code></p>
+<p>Example <code>MyDict = {1:True,2:False,3:None} Key = (1,2,3) Value = 0</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align:center">Method</th>
 <th style="text-align:center">Parameter Explain</th>
-<th style="text-align:center">Description</th>
+<th style="text-align:center">Sample Code</th>
 <th style="text-align:center">Effect</th>
+<th style="text-align:center">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">Mydict.clear()</td>
+<td style="text-align:center">clear()</td>
 <td style="text-align:center">N.A</td>
+<td style="text-align:center">MyDict.clear()</td>
+<td style="text-align:center">MyDict: {}</td>
 <td style="text-align:center">Removes all the elements from the dictionary</td>
-<td style="text-align:center">MyDict = {}</td>
 </tr>
 <tr>
-<td style="text-align:center">Clone = MyDict.copy()</td>
+<td style="text-align:center">copy()</td>
 <td style="text-align:center">N.A</td>
+<td style="text-align:center">Clone = MyDict.copy()</td>
+<td style="text-align:center">Clone: {1:True,2:False,3:None}</td>
 <td style="text-align:center">Returns a copy of the dictionary</td>
-<td style="text-align:center">Clone = {1:True,2:False,3:None}</td>
 </tr>
 <tr>
+<td style="text-align:center">fromkeys(Key,Value)</td>
+<td style="text-align:center">Keys[iterable]: Required, The set of Key| Value[any]:Optional[None] The value for all Key</td>
 <td style="text-align:center">Newdict = dict.fromkeys(Key,Value)</td>
-<td style="text-align:center">Keys: Required(iterable); Value: The value for all Key</td>
+<td style="text-align:center">Newdict: {1:0,2:0,3:0}</td>
 <td style="text-align:center">Returns a dictionary with the specified keys and value</td>
-<td style="text-align:center"></td>
 </tr>
 <tr>
-<td style="text-align:center">get()</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">get(keyname, value)</td>
+<td style="text-align:center">Keyname[any]: Required| value[any]: Optional[None], default value for cannot find</td>
+<td style="text-align:center">MyDict.get(1)</td>
+<td style="text-align:center">Return: True</td>
 <td style="text-align:center">Returns the value of the specified key</td>
-<td style="text-align:center"></td>
 </tr>
 <tr>
-<td style="text-align:center">item()</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">items()</td>
+<td style="text-align:center">N.A</td>
+<td style="text-align:center">Mydict.items()</td>
+<td style="text-align:center">Return:[(1,True),(2,False),(3,None)]</td>
 <td style="text-align:center">Returns a list containing a tuple for each key value pair</td>
-<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">keys()</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">N.A</td>
+<td style="text-align:center">Mydict.keys()</td>
+<td style="text-align:center">Return: [1,2,3]</td>
 <td style="text-align:center">Returns a list containing the dictionary's keys</td>
-<td style="text-align:center"></td>
 </tr>
 <tr>
-<td style="text-align:center">pop()</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">pop(keyname, defaultvalue)</td>
+<td style="text-align:center">Keyname[any]: Required| defaultvalue[any]: Optional[], error would be raise if not default value is set and not fojnd</td>
+<td style="text-align:center">Mydict.pop(1) | Mydict.pop(4,-1)</td>
+<td style="text-align:center">Return: True; MyDict:{1:True,2:False}| -1;Unchanged</td>
 <td style="text-align:center">Removes the element with the specified key</td>
-<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">popitem()</td>
-<td style="text-align:center"></td>
+<td style="text-align:center">N.A</td>
+<td style="text-align:center">MyDict.popitem()</td>
+<td style="text-align:center">Return: (</td>
 <td style="text-align:center">Removes the last inserted key-value pair</td>
-<td style="text-align:center"></td>
 </tr>
 <tr>
 <td style="text-align:center">setdefault()</td>
 <td style="text-align:center"></td>
-<td style="text-align:center">Returns the value of the specified key. If the key does not exist: insert the key, with the specified value</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Returns the value of the specified key. If the key does not exist: insert the key, with the specified value</td>
 </tr>
 <tr>
 <td style="text-align:center">update()</td>
 <td style="text-align:center"></td>
-<td style="text-align:center">Updates the dictionary with the specified key-value pairs</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Updates the dictionary with the specified key-value pairs</td>
 </tr>
 <tr>
 <td style="text-align:center">values()</td>
 <td style="text-align:center"></td>
-<td style="text-align:center">Returns a list of all the values in the dictionary</td>
 <td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">Returns a list of all the values in the dictionary</td>
 </tr>
 </tbody>
 </table>
